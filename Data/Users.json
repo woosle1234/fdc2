@@ -1,0 +1,16 @@
+{
+  "Users": [
+    {
+      "FirstName": "Woosle",
+      "LastName": "Park",
+      "Username": "woosle1234",
+      "Password": "123456",
+      "ConfirmPassword": "123456",
+      "Email": "whyuwatchingthis@gmail.com",
+      "PhoneNumber": "",
+      "UserType": "Job Seeker",
+      "Status": "LookingForEmployers",
+      "id": 1
+    }
+  ]
+}
