@@ -35,6 +35,7 @@ export default class Login extends Component {
         }
     }
 
+    //gets google data checks in JSON server logins in if there is a match
     googleLogin(res){
         let userData = res['su'];
         this.setState({errMsg:""});
@@ -59,6 +60,8 @@ export default class Login extends Component {
                 })
                 .catch(err=>console.log(err))
     }
+
+
 
     loginToAccount(e){
         e.preventDefault()

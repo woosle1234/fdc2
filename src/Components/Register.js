@@ -21,6 +21,7 @@ export default class Register extends Component {
 
     }
 
+    //gets google info
     checkGoogle(res) {
 
         this.setState({ errorMsg: "" });
@@ -32,6 +33,8 @@ export default class Register extends Component {
 
     }
 
+
+    //checks if the data is correct then sends the data to the JSON server
     validateData(formData) {
         if (formData["Password"] === formData["ConfirmPassword"]) {
             this.setState({ errorMsg: "" })
@@ -89,8 +92,6 @@ export default class Register extends Component {
             Status: e.target[8].value.trim()
         }
         this.validateData(formData)
-            
-        
 
     }
 

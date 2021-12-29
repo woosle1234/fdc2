@@ -12,7 +12,7 @@ export default class User extends Component {
         this.logout = this.logout.bind(this);
     }
 
-
+    //Checks if the user is logged in otherwise sends them back to login page
     componentDidMount(){
         let cookies = document.cookie.split('; ')
         let email = cookies.find(element => element.search("email")>=0)
@@ -33,6 +33,7 @@ export default class User extends Component {
         
     }
 
+    //deletes login cookie
     logout(e){
         e.preventDefault()
         document.cookie = 'email=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
